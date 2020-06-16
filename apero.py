@@ -33,3 +33,4 @@
 #       - il faut des jokers 5 ? (gR en a parlé non ?)
 #
 print("Santé!")
+print("Saude!")
