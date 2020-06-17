@@ -18,6 +18,7 @@
 #   git commit -m "message du commit"
 #   git pull
 #   git push origin master
+#   git log ( ça devient essentiel à plusieurs )
 # ------------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------------
@@ -31,10 +32,29 @@
 #       - peut être pas plus d'une fonction/taches par commit
 #       - pas plus d'une classe (module) par push
 #       - il faut des jokers 5 ? (gR en a parlé non ?)
-#
-print("Santé!")
-print("Saude!")
-print("C'est quoi le projet ? ")
+#       - pas de caractères d'espaces en fin de ligne (freak privilege)
+#       - le 5 lignes me parait impossible je vais griller tout mes joker 
+#       
 
 class Biere:
-    ...
+
+    #vol : volume (mL)
+    def __init__(self,vol=500):
+        self.verre=vol
+
+    def boire(self,gorgee):
+        self.verre-=gorgee
+
+if __name__=="__main__":
+
+    sB=Biere(125) #galopin hihi
+    fmV=Biere()
+    gR=Biere()
+
+    print("Santé!")
+    print("Saude!")
+    print("C'est quoi le projet ? ")
+
+    sB.boire(10)
+    fmV.boire(10)
+    gR.boire(500)
