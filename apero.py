@@ -35,3 +35,6 @@
 print("Santé!")
 print("Saude!")
 print("C'est quoi le projet ? ")
+
+class Biere:
+    ...
