@@ -1,11 +1,11 @@
 # coding: utf-8
-
+#
 # ------------------------------------------------------------------------------
-# Info sur les auteurs
+# Info sur les auteur.e.s
 # ------------------------------------------------------------------------------
 #  abbrev. | Nom Complet            |  Rôle Princpal               |  Joker
 # ------------------------------------------------------------------------------
-#    sB    | Soufiane Benlhajlahsen |                              |   5
+#    sB    | Soufiane Benlhajlahsen | Alibi                        |   5
 #    gR    | Guillaume Roux         |                              |   5
 #    fmV   | Filipe Vasconcelos     | 80col. et commentaires freak |   4
 # ------------------------------------------------------------------------------
@@ -13,7 +13,7 @@
 # ------------------------------------------------------------------------------
 # commande git à connaitre pour démarrer (pour sB surtout):
 # ------------------------------------------------------------------------------
-#   git clone 
+#   git clone
 #   git add
 #   git commit -m "message du commit"
 #   git pull
@@ -34,3 +34,4 @@
 #
 print("Santé!")
 print("Saude!")
+print("C'est quoi le projet ? ")
