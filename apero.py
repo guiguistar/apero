@@ -33,24 +33,26 @@
 #       - pas plus d'une classe (module) par push
 #       - il faut des jokers 5 ? (gR en a parlé non ?)
 #       - pas de caractères d'espaces en fin de ligne (freak privilege)
-#       - le 5 lignes me parait impossible je vais griller tout mes joker 
+#       - le 5 lignes me parait impossible je vais griller tous mes joker
 #       
 
+# ------------------------------------------------------------------------------
+class ExceptionDeTypeBiereVide(Exception):
+    pass
+
+# ------------------------------------------------------------------------------
 class Biere:
 
-    #vol : volume (mL)
     def __init__(self,vol=500):
-        self.verre=vol
+        self.verre=vol # vol en mL
 
     def boire(self,gorgee):
         if self.verre >= gorgee:
             self.verre-=gorgee
         else:
             raise ExceptionDeTypeBiereVide()
-
-class ExceptionDeTypeBiereVide(Exception):
-    pass
         
+# ------------------------------------------------------------------------------
 if __name__=="__main__":
 
     sB=Biere(125) #galopin hihi
@@ -59,11 +61,11 @@ if __name__=="__main__":
 
     print("Santé!")
     print("Saude!")
-    print("C'est quoi le projet ? ")
+    print("C'est quoi le projet ?")
 
     sB.boire(10)
     fmV.boire(10)
-    gR.boire(500) # gR: 500 :D
+    gR.boire(500) #gR: 500 :D
 
     gorgeeDeTrop = 50
     try:
