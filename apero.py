@@ -29,11 +29,11 @@
 #       - pas 2 push d'affilé (fmV : ça peut etre fun )
 #
 #   fmV :
-#       - peut être pas plus d'une fonction/taches par commit
-#       - pas plus d'une classe (module) par push
-#       - il faut des jokers 5 ? (gR en a parlé non ?)
-#       - pas de caractères d'espaces en fin de ligne (freak privilege)
-#       - le 5 lignes me parait impossible je vais griller tous mes joker
+#       - peut être pas plus d'une fonction/taches par commit  gR: ça me va
+#       - pas plus d'une classe (module) par push gR: ça me va aussi
+#       - il faut des jokers 5 ? (gR en a parlé non ?) 
+#       - pas de caractères d'espaces en fin de ligne (freak privilege) gR: \t ?
+#       - le 5 lignes me parait impossible je vais griller tous mes joker gR: +
 # ------------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------------
