@@ -11,7 +11,7 @@
 # ------------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------------
-# commande git à connaitre pour démarrer (pour sB surtout):
+# Commande git à connaitre pour démarrer (pour sB surtout):
 # ------------------------------------------------------------------------------
 #   git clone
 #   git add
@@ -22,19 +22,36 @@
 # ------------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------------
-# première régles (à discuter) :
+# Premières régles (à discuter/compléter) :
 # ------------------------------------------------------------------------------
-# gR
+#   gR  :
 #       - pas plus de 5 lignes par commit ( compliqué ? )
 #       - pas 2 push d'affilé (fmV : ça peut etre fun )
 #
-# fmV
+#   fmV :
 #       - peut être pas plus d'une fonction/taches par commit
 #       - pas plus d'une classe (module) par push
 #       - il faut des jokers 5 ? (gR en a parlé non ?)
 #       - pas de caractères d'espaces en fin de ligne (freak privilege)
 #       - le 5 lignes me parait impossible je vais griller tous mes joker
-#       
+# ------------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------------
+# C'est quoi le projet ? (à compléter)
+# ------------------------------------------------------------------------------
+#   fmV :
+#       - un truc qui clac en ligne de commande et/ou graphique;
+#       - avec des belles maths et de l'output avec;
+#         du 1.1545621528E+02 en veux tu en voilà !
+#       - des librairies de compète : fftw, lapack de l'algèbre linéaire;
+#       - du multilangage/multiniveau pour aller chercher de la performance;
+#       - du benchmark de temps d'éxécution;
+#       - des tests de précision numérique.
+#
+#       - ou alors on fait un morpion (-_-')
+# ------------------------------------------------------------------------------
+
+
 
 # ------------------------------------------------------------------------------
 class ExceptionDeTypeBiereVide(Exception):
@@ -44,7 +61,7 @@ class ExceptionDeTypeBiereVide(Exception):
 class Biere:
 
     def __init__(self,vol=500):
-        self.verre=vol # vol en mL
+        self.verre=vol #fmv: vol en mL
 
     def boire(self,gorgee):
         if self.verre >= gorgee:
@@ -55,7 +72,7 @@ class Biere:
 # ------------------------------------------------------------------------------
 if __name__=="__main__":
 
-    sB=Biere(125) #galopin hihi
+    sB=Biere(125) #fmv: galopin hihi
     fmV=Biere()
     gR=Biere()
 
