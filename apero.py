@@ -43,8 +43,14 @@ class Biere:
         self.verre=vol
 
     def boire(self,gorgee):
-        self.verre-=gorgee
+        if self.verre >= gorgee:
+            self.verre-=gorgee
+        else:
+            raise ExceptionDeTypeBiereVide()
 
+class ExceptionDeTypeBiereVide(Exception):
+    pass
+        
 if __name__=="__main__":
 
     sB=Biere(125) #galopin hihi
@@ -57,4 +63,10 @@ if __name__=="__main__":
 
     sB.boire(10)
     fmV.boire(10)
-    gR.boire(500)
+    gR.boire(500) # gR: 500 :D
+
+    gorgeeDeTrop = 50
+    try:
+        gR.boire(gorgeeDeTrop)
+    except ExceptionDeTypeBiereVide:
+        print("Aïe")
